@@ -7,7 +7,9 @@
 1. Build the first container
 1. [baseimage-docker](https://github.com/phusion/baseimage-docker) and [passenger-docker](https://github.com/phusion/passenger-docker)
 1. Docker remote API
-1. [Single Server of Dockers](https://github.com/daiweilu/ssd) (a NPM package developed by me)
+1. Other Interesting Tools
+    - [Single Server of Dockers](https://github.com/daiweilu/ssd) (a tool to deploy simple project by me)
+    - [Fig](https://github.com/docker/fig)
 
 ## What is Docker
 
@@ -15,7 +17,18 @@
 
 For me, Docker is a light weight "VM" solution for Linux. You can run applications with reasonable level of isolation and maximum level of performance to a degree that you don't have to care about those anymore.
 
-// Get a Image
+### Structure
+
+
+
+### Benefits
+
+- Isolation
+- Many apps on one server
+- Different versions of dependencies, e.g. databases
+- Fast deployment: incremental builds, common base, no need to install everything on AWS instance
+- Zero down time
+- Isolated development environment (with Fig)
 
 ## Install It on Your Mac
 
@@ -62,7 +75,9 @@ open http://$(boot2docker ip):<port>
 
 ## [baseimage-docker](https://github.com/phusion/baseimage-docker) and [passenger-docker](https://github.com/phusion/passenger-docker)
 
-They claim to be clean and minimum (best for OCD patients).
+They claim to be clean and minimum.
+
+`Demo2`
 
 ```
 docker build -t test2 .
@@ -72,8 +87,12 @@ open http://$(boot2docker ip):<port>
 
 ## Docker remote API
 
-// TODO
+https://docs.docker.com/reference/api/docker_remote_api/
 
-## [Single Server of Dockers](https://github.com/daiweilu/ssd)
+## Other Interesting Tools
 
-// TODO
+### [SSD - Single Server of Dockers](https://github.com/daiweilu/ssd)
+
+Demo in `~/dev/projects/shout-irc`
+
+### [Fig](https://github.com/docker/fig)
