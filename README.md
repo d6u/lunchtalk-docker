@@ -19,7 +19,7 @@ For me, Docker is a light weight "VM" solution for Linux. You can run applicatio
 
 ### Structure
 
-
+![Docker structure](https://raw.githubusercontent.com/daiweilu/lunchtalk-docker/master/imgs/docker-intro.png)
 
 ### Benefits
 
